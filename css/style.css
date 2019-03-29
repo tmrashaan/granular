@@ -159,3 +159,24 @@ footer a {
   color: grey;
   padding: 10px 0;
 }
+
+/* Mobile styles */
+@media screen and (max-width: 760px) {
+  .scroll-effect {
+    background-attachment: scroll;
+  }
+
+  nav {
+    position: static;
+    padding-top: 50px;
+  }
+}
+
+.subscribe, .highlight, .feature {
+  padding: 20px;
+}
+
+.button, .email {
+  width: 100%
+}
+}
