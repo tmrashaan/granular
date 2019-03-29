@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333;
+  text-align: center;
+}
+
+.scroll-effect {
+  height: 100vh;
+  /* stops the background from repeating */
+  background-repeat: no-repeat;
+  /*  stretch background to cover the element*/
+  background-size: cover;
+  /* show the center of the image */
+  background-position: center;
+  /* scroll content over background */
+  background-attachment: fixed;
+  /* fixes elements in section */
+  position: relative;
+}
+
+header {
+  background-image: url(../images/header.jpg);
+  /*  set the height of the element to 100% of the viewpoint*/
+}
+
+nav {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: #e3e8ea;
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.feature {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+p {
+  margin-bottom: 60px;
+}
+
+#filter1 {
+  background-image: url(../images/one.jpg);
+}
+
+#filter2 {
+  background-image: url(..//images/two.jpg);
+}
+
+#filter3 {
+  background-image: url(..//images/three.jpg);
+}
+
+#filter4 {
+  background-image: url(..//images/four.jpg);
+}
+
+#filter5 {
+  background-image: url(..//images/five.jpg);
+}
+
+h3 {
+  color: white;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+/* subscribe */
+.subscribe,
+footer {
+  background-color: #eedb21;
+  padding: 50px 0;
+}
+
+.email {
+  width: 60%;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px;
+  text-align: center;
+  outline: none;
+  margin-bottom: 10px;
+  transition: border 0.3s;
+}
+
+.email:focus {
+  border: 2px solid #333333;
+}
+
+.button {
+  width: 60%;
+  background-color: transparent;
+  border: 2px solid #333333;
+  border-radius: 5px;
+  padding: 8px 0;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  color: white;
+  border-color: white;
+}
+
+footer {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+small {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: grey;
+  padding: 10px 0;
+}
