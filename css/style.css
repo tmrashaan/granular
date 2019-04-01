@@ -61,9 +61,9 @@ nav a:hover {
   padding: 50px 0;
 }
 
-h2 {
+h2, h4 {
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -130,14 +130,13 @@ footer {
   border: 2px solid #333333;
 }
 
-.button {
+.button, button {
   width: 60%;
   background-color: transparent;
   border: 2px solid #333333;
   border-radius: 5px;
   padding: 8px 0;
   text-transform: uppercase;
-  transition: all 0.3s;
 }
 
 .button:hover {
@@ -157,7 +156,88 @@ small {
 footer a {
   text-decoration: none;
   color: grey;
-  padding: 10px 0;
+  padding: 0 10px;
+}
+
+/* About page styles */
+.about {
+  background-image: url(../images/three.jpg);
+}
+
+.gallery {
+  /* Flexbox allows us to allign items vertically and horizontally */
+  /* To use flexboc */
+  /* 1. Apply display: flex */
+  display: flex;
+  /* 2. Set the flex-direction */
+  flex-direction: row;
+  /* Align the items either horizontally using justify-content or vertically using align-items */
+  justify-content: center;
+  /* Set whether you want the items to wrap on to different lines */
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  height: 200px;
+  margin: 0 0 20px 20px
+}
+
+/* Pricing */
+.pricing {
+  background-image: url(../images/header.jpg);
+  height: auto;
+  padding: 50px 0;
+  color: white
+}
+
+/* Pricing cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  background: #f2f2f2;
+  border-radius: 5px;
+  margin: 10px;
+  padding-bottom: 50PX;
+  /* This is property sets the width of our flexbox */
+  flex-basis: 250px;
+}
+
+h4 {
+  background: #808080;
+  height: 80px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+li {
+  height: 20px;
+  margin: 12px auto;
+}
+
+.big-card {
+  transform: scaleX(1.12);
+}
+
+.big-card button {
+  background: #EEDE00;
+}
+
+button:hover {
+  background: 333333;
+  color: white;
 }
 
 /* Mobile styles */
@@ -170,13 +250,12 @@ footer a {
     position: static;
     padding-top: 50px;
   }
-}
 
-.subscribe, .highlight, .feature {
-  padding: 20px;
-}
+  .subscribe, .highlight, .feature {
+    padding: 20px;
+  }
 
-.button, .email {
-  width: 100%
-}
+  .button, .email {
+    width: 100%
+  }
 }
